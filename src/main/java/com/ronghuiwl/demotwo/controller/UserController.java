@@ -1,6 +1,7 @@
 package com.ronghuiwl.demotwo.controller;
 
 import com.ronghuiwl.demotwo.dto.UserDTO;
+import com.ronghuiwl.demotwo.dto.UserVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,9 +26,19 @@ public class UserController {
             user.setPhone(String.valueOf(System.currentTimeMillis()));
             user.setBankCard("6225880123456789"+System.currentTimeMillis()+i);
             user.setPassword("1234523326"+i);
-            user.setName("long"+i);
+            user.setName("跳转吵佃菜注解"+i);
             list.add(user);
         }
         return list;
+    }
+
+    @GetMapping("/vo")
+    public UserVO getUserVO() {
+        UserVO userVO = new UserVO();
+        userVO.setPhone(String.valueOf(System.currentTimeMillis()));
+        userVO.setBankCard("6225880123456789"+System.currentTimeMillis());
+        userVO.setPassword("1234523326");
+        userVO.setName("long");
+        return userVO;
     }
 }
