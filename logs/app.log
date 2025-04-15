@@ -1,0 +1,7 @@
+2025-04-15 20:08:51.876 [restartedMain] INFO  o.a.d.s.b.c.e.WelcomeLogoApplicationListener [] -  [DUBBO] 
+
+ :: Dubbo (v3.3.0) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+, dubbo version: 3.3.0, current host: 192.168.124.8
+2025-04-15 20:08:52.021 [restartedMain] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-15 20:08:52.021 [restartedMain] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
